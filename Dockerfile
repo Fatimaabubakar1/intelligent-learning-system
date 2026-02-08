@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Refresh package list and install dependencies
+# Refresh package list and install system dependencies
 RUN apt-get update --fix-missing && apt-get install -y \
     libpng-dev libjpeg-dev libfreetype6-dev zip git unzip curl \
     libonig-dev libxml2-dev libzip-dev \
@@ -14,6 +14,7 @@ WORKDIR /var/www
 
 COPY . .
 
+# Install Laravel dependencies
 RUN composer install --no-dev --optimize-autoloader
 RUN php artisan config:cache
 
