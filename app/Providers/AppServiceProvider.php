@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\URL;
+use League\CommonMark\Environment\Environment;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -35,9 +36,11 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();
 
-        if (env('APP_ENV') === 'production' || str_contains(request()->header('x-forwarded-Photo', ''), 'https')){
+        if (app()->environment('production')){
             URL::forceScheme(('https'));
         }
+
+
 
     }
 }
