@@ -35,8 +35,11 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();
 
-        if (app()->environment('production')){
+        if (env('APP_ENV') === 'production' || str_contains(request()->header('x-forwarded-Photo', ''), 'https')){
             URL::forceScheme(('https'));
         }
+
+
+
     }
 }
