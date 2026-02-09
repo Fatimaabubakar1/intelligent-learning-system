@@ -20,5 +20,12 @@ class DatabaseSeeder extends Seeder
         $this->call([
             LessonsTableSeeder::class,
         ]);
+
+        $this->call([
+            LanguageDataSeeder::class,
+            LessonsSeeder::class,
+        ]);
+
     }
+
 }
