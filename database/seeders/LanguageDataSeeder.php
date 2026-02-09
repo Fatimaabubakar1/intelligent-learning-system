@@ -15,12 +15,12 @@ class LanguageDataSeeder extends Seeder
     {
         DB::table('language_data')->insert([
             'language' => 'hausa',
-            'word' => 'Sannu',
+            'term' => 'Sannu',
             'meaning' => 'Hello',
             'category' => 'Greeting',
             'created_at' => now(),
             'updated_at' => now(),
-        ]);
+]);
 
     }
 }
