@@ -15,8 +15,8 @@ class LanguageDataSeeder extends Seeder
     {
         DB::table('language_data')->insert([
             'language' => 'hausa',
-            'text' => 'Sannu',
-            'meaning' => 'Hello',
+            'original_text' => 'Sannu',
+            'translation' => 'Hello',
             'category' => 'Greeting',
             'created_at' => now(),
             'updated_at' => now(),
