@@ -26,15 +26,15 @@
         <div class="nav-section">
             <div class="nav-group">
                 <div class="nav-title">AI Learning</div>
-                <a href="{{ route('learning.hausa.pos') }}" class="nav-item">
+                <a href="{{ route('learning.hausa_pos') }}" class="nav-item">
                     <div class="nav-icon">🔤</div>
                     <div class="nav-text">Hausa</div>
                 </a>
-                <a href="{{ route('learning.yoruba.pos') }}" class="nav-item">
+                <a href="{{ route('learning.yoruba_pos') }}" class="nav-item">
                     <div class="nav-icon">📝</div>
                     <div class="nav-text">Yoruba</div>
                 </a>
-                <a href="{{ route('learning.igbo.pos') }}" class="nav-item">
+                <a href="{{ route('learning.igbo_pos') }}" class="nav-item">
                     <div class="nav-icon">🏷️</div>
                     <div class="nav-text">Igbo</div>
                 </a>

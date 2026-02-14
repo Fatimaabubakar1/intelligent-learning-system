@@ -25,15 +25,15 @@
         <div class="nav-section">
             <div class="nav-group">
                 <div class="nav-title">AI Learning</div>
-                <a href="{{ route('learning.hausa.pos') }}" class="nav-item">
+                <a href="{{ route('learning.hausa_pos') }}" class="nav-item">
                     <div class="nav-icon">🔤</div>
                     <div class="nav-text">Hausa</div>
                 </a>
-                <a href="{{ route('learning.yoruba.pos') }}" class="nav-item">
+                <a href="{{ route('learning.yoruba_pos') }}" class="nav-item">
                     <div class="nav-icon">📝</div>
                     <div class="nav-text">Yoruba</div>
                 </a>
-                <a href="{{ route('learning.igbo.pos') }}" class="nav-item">
+                <a href="{{ route('learning.igbo_pos') }}" class="nav-item">
                     <div class="nav-icon">🏷️</div>
                     <div class="nav-text">Igbo</div>
                 </a>
@@ -86,7 +86,7 @@
             </div>
             <div class="header-right">
                 <button class="header-btn btn-outline">Today's Goals</button>
-                <button class="header-btn btn-primary" onclick="window.location='{{ route('learning.hausa.pos') }}'">Start Learning</button>
+                <button class="header-btn btn-primary" onclick="window.location='{{ route('learning.hausa_pos') }}'">Start Learning</button>
             </div>
         </div>
 
@@ -120,7 +120,7 @@
                             Progress tracking
                         </div>
                     </div>
-                    <a href="{{ route('learning.hausa.pos') }}" class="module-btn hausa">
+                    <a href="{{ route('learning.hausa_pos') }}" class="module-btn hausa">
                         Start Learning Hausa
                     </a>
                     <div class="progress-stats">
@@ -155,7 +155,7 @@
                             Language learning support
                         </div>
                     </div>
-                    <a href="{{ route('learning.yoruba.pos') }}" class="module-btn yoruba">
+                    <a href="{{ route('learning.yoruba_pos') }}" class="module-btn yoruba">
                         Start Learning Yoruba
                     </a>
                     <div class="progress-stats">
@@ -190,7 +190,7 @@
                             Native speaker validation
                         </div>
                     </div>
-                    <a href="{{ route('learning.igbo.pos') }}" class="module-btn igbo">
+                    <a href="{{ route('learning.igbo_pos') }}" class="module-btn igbo">
                         Start Learning Igbo
                     </a>
                     <div class="progress-stats">

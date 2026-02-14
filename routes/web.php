@@ -28,9 +28,9 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 // Public Learning Routes (accessible to all)
 Route::prefix('learning')->group(function () {
-    Route::get('/hausa/pos', [LanguageDataController::class, 'showHausaPOS'])->name('learning.hausa.pos');
-    Route::get('/yoruba/pos', [LanguageDataController::class, 'showYorubaPOS'])->name('learning.yoruba.pos');
-    Route::get('/igbo/pos', [LanguageDataController::class, 'showIgboPOS'])->name('learning.igbo.pos');
+    Route::get('/hausa/pos', [LanguageDataController::class, 'showHausaPOS'])->name('learning.hausa_pos');
+    Route::get('/yoruba/pos', [LanguageDataController::class, 'showYorubaPOS'])->name('learning.yoruba_pos');
+    Route::get('/igbo/pos', [LanguageDataController::class, 'showIgboPOS'])->name('learning.igbo_pos');
 
     // Public lessons - accessible to all visitors
     Route::get('/lessons', [LessonController::class, 'index'])->name('lessons.index');
