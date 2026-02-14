@@ -27,7 +27,7 @@ Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Public Learning Routes (accessible to all)
-Route::prefix('learn')->group(function () {
+Route::prefix('learning')->group(function () {
     Route::get('/hausa/pos', [LanguageDataController::class, 'showHausaPOS'])->name('learning.hausa.pos');
     Route::get('/yoruba/pos', [LanguageDataController::class, 'showYorubaPOS'])->name('learning.yoruba.pos');
     Route::get('/igbo/pos', [LanguageDataController::class, 'showIgboPOS'])->name('learning.igbo.pos');
