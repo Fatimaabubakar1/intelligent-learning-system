@@ -206,13 +206,13 @@
                 </div>
                 <div class="card-body">
                     <div class="list-group">
-                        <a href="{{ route('learn.hausa.pos') }}" class="list-group-item list-group-item-action">
+                        <a href="{{ route('learning.hausa.pos') }}" class="list-group-item list-group-item-action">
                             <i class="fas fa-language me-2"></i> {{ ucfirst($lesson->language) }} POS Analyzer
                         </a>
                         <a href="{{ route('language.' . $lesson->language) }}" class="list-group-item list-group-item-action">
                             <i class="fas fa-book me-2"></i> {{ ucfirst($lesson->language) }} Dictionary
                         </a>
-                        <a href="{{ route('learn.progress') }}" class="list-group-item list-group-item-action">
+                        <a href="{{ route('learning.progress') }}" class="list-group-item list-group-item-action">
                             <i class="fas fa-chart-line me-2"></i> Your Progress
                         </a>
                     </div>
